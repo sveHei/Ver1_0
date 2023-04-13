@@ -1,13 +1,19 @@
 let beats = 4; // number of beats shown on the canvas
 let unit = 300;
 let offset = 1/10; //shifts each impulse to the right by an amount of the beat (unit)
-let radius = (unit/100)+0.5;
 let activePulses = [];
 
 const canvas = document.querySelector("#myCanvas");
 const context= canvas.getContext("2d");
 
 function drawPulse(numerator, denominator) {
+    let radius;
+    if (numerator == 1 & denominator == 1){
+        radius = (unit/100)+1.5;
+    } else {
+        radius = (unit/100)+0.5;
+    }
+    
     let pulse = [];
     let j = 0;
 
