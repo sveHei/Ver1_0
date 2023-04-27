@@ -1,8 +1,13 @@
 
-  canvas {
-    border: 1px solid black;
-    border-radius: 5px;
-  }
+canvas {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.canvas-container {
+  overflow-x: scroll;
+}
+
 
 td {
     padding: 5px;
@@ -29,7 +34,7 @@ td {
     color: rgb(33, 7, 232);
   }
 
-  #denominator_3 input[type=checkbox]:checked+label, #denominator_6 input[type=checkbox]:checked+label,#denominator_9 input[type=checkbox]:checked+label {
+  #denominator_3 input[type=checkbox]:checked+label, #denominator_9 input[type=checkbox]:checked+label {
     font-style: normal;
     color: rgb(232, 165, 7);
   }
@@ -39,7 +44,50 @@ td {
     color: rgb(244, 10, 10);
   }
 
-  #denominator_7 input[type=checkbox]:checked+label {
+  #denominator_6 input[type=checkbox]:checked+label {
     font-style: normal;
     color: rgb(20, 109, 16);
   }
+
+  #denominator_7 input[type=checkbox]:checked+label {
+    font-style: normal;
+    color: rgb(108, 11, 225);
+  }
+
+  .tablinks {
+    overflow: hidden;
+    background-color: #ccc;
+    color: black;
+    float: left;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px;
+    margin: 1px 1px 1px 1px;
+    font-size: 17px;
+    width: 49%;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .tablinks:hover {
+    background-color: #ddd;
+  }
+
+  .tablinks.active {
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 1px solid white;
+  }
+
+ #zoom {
+    display: inline-block;
+    margin-left: 1px;
+ }
+
+ #zoomSlider {
+    position: relative;
+    top: 4px;
+ }
